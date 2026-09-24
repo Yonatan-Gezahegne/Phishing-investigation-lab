@@ -1,0 +1,45 @@
+Received: from mx-edge.ridgeline.example (mx-edge.ridgeline.example [192.0.2.10]) by mx1.ridgeline.example with ESMTPS id 9B7D3; Tue, 15 Sep 2026 14:03:14 -0400
+Received: from mail.pinecrest-supply.example (vps-host.cheap-cloud.example [198.51.100.23]) by mx-edge.ridgeline.example with ESMTP id 5E1F9; Tue, 15 Sep 2026 14:03:12 -0400
+Authentication-Results: mx1.ridgeline.example;
+ spf=softfail (domain does not designate 198.51.100.23 as permitted sender) smtp.mailfrom=pinecrest-supply.example;
+ dkim=fail (signature did not verify) header.d=pinecrest-supply.example;
+ dmarc=fail action=quarantine header.from=pinecrest-supply.example
+From: Pinecrest Supply Accounts <accounts@pinecrest-supply.example>
+Reply-To: pinecrest.billing.dept@quickmail-free.example
+Return-Path: <accounts@pinecrest-supply.example>
+To: ap-team@ridgeline.example
+Subject: Overdue invoice #88213 - final notice
+Date: Tue, 15 Sep 2026 14:03:10 -0400
+Message-ID: <CAF88213.9921@pinecrest-supply.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============9204494934552349981=="
+
+--===============9204494934552349981==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+Please see attached invoice #88213 which is now overdue.
+Open the attached document to view and approve payment immediately.
+
+Regards,
+Pinecrest Supply - Accounts Receivable
+
+--===============9204494934552349981==
+Content-Type: text/html
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Invoice_88213.html"
+MIME-Version: 1.0
+
+PCEtLSBUUkFJTklORyBTQU1QTEUgLSBoYXJtbGVzcy4gU2ltdWxhdGVzIGFuIEhUTUwgY3JlZGVu
+dGlhbC1waGlzaGluZyBhdHRhY2htZW50LiAtLT4KPGh0bWw+PGhlYWQ+PHRpdGxlPkludm9pY2Ug
+ODgyMTM8L3RpdGxlPjwvaGVhZD48Ym9keT4KPGgzPlBpbmVjcmVzdCBTdXBwbHkgLSBTZWN1cmUg
+RG9jdW1lbnQgVmlld2VyPC9oMz4KPHA+U2lnbiBpbiB3aXRoIHlvdXIgZW1haWwgdG8gdmlldyBp
+bnZvaWNlICM4ODIxMy48L3A+Cjxmb3JtIGFjdGlvbj0iaHR0cHM6Ly9kb2N2aWV3LXNlY3VyZS1z
+aGFyZS5leGFtcGxlL2NvbGxlY3QucGhwIiBtZXRob2Q9InBvc3QiPgogIDxpbnB1dCBuYW1lPSJl
+bWFpbCIgcGxhY2Vob2xkZXI9IkVtYWlsIj48aW5wdXQgbmFtZT0icGFzcyIgdHlwZT0icGFzc3dv
+cmQiIHBsYWNlaG9sZGVyPSJQYXNzd29yZCI+CiAgPGJ1dHRvbj5WaWV3IERvY3VtZW50PC9idXR0
+b24+CjwvZm9ybT48L2JvZHk+PC9odG1sPgo=
+
+--===============9204494934552349981==--

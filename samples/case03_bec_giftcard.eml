@@ -1,0 +1,31 @@
+Received: from mx-edge.ridgeline.example (mx-edge.ridgeline.example [192.0.2.10]) by mx1.ridgeline.example with ESMTPS id C44E0; Wed, 16 Sep 2026 16:47:35 -0400
+Received: from out-19.quickmail-free.example (out-19.quickmail-free.example [198.51.100.140]) by mx-edge.ridgeline.example with ESMTPS id 2D9A6; Wed, 16 Sep 2026 16:47:33 -0400
+Authentication-Results: mx1.ridgeline.example;
+ spf=pass smtp.mailfrom=quickmail-free.example;
+ dkim=pass header.d=quickmail-free.example;
+ dmarc=pass header.from=quickmail-free.example
+From: Dana Whitfield <dana.whitfield.ceo@quickmail-free.example>
+Reply-To: dana.whitfield.ceo@quickmail-free.example
+Return-Path: <dana.whitfield.ceo@quickmail-free.example>
+To: rgarcia@ridgeline.example
+Subject: Quick favor - confidential
+Date: Wed, 16 Sep 2026 16:47:31 -0400
+Message-ID: <a81f.20260916204731@quickmail-free.example>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Rosa,
+
+Are you at your desk? I'm stuck in back-to-back board meetings and need a qui=
+ck favor.
+I need 6 gift cards ($200 each) for a client appreciation this afternoon. It'=
+s urgent and
+confidential - please don't mention it to anyone yet, I want it to be a surpr=
+ise.
+
+Scratch the backs and send me photos of the codes. I'll reimburse you today.
+
+Dana Whitfield
+CEO, Ridgeline Logistics
+Sent from my phone

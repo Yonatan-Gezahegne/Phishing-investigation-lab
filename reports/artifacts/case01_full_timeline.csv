@@ -1,0 +1,19 @@
+timestamp,source,event
+2026-09-14T07:58:11-04:00,case01_signin_logs,"Sign-in SUCCESS for jsmith from 192.0.2.50 (Wheeling, US, Windows 10 / Edge), MFA: satisfied"
+2026-09-14T08:05:42-04:00,case01_signin_logs,"Sign-in SUCCESS for apatel from 192.0.2.50 (Wheeling, US, Windows 10 / Chrome), MFA: satisfied"
+2026-09-14T08:12:44-04:00,email,Email sent: 'ACTION REQUIRED: Your password expires in 24 hours' from Ridgeline IT Service Desk <helpdesk@ridgeIine-support.example>
+2026-09-14T08:12:47-04:00,email,"Email delivered to: jsmith@ridgeline.example, apatel@ridgeline.example, mlee@ridgeline.example"
+2026-09-14T08:21:05-04:00,case01_proxy_logs,mlee (10.20.4.18) GET https://intranet.ridgeline.example/home -> 200
+2026-09-14T08:31:52-04:00,case01_proxy_logs,jsmith (10.20.4.33) GET https://ridgeline-sso-verify.example/auth/login?u=jsmith -> 200
+2026-09-14T08:32:40-04:00,case01_proxy_logs,jsmith (10.20.4.33) POST https://ridgeline-sso-verify.example/auth/submit -> 302
+2026-09-14T08:32:41-04:00,case01_proxy_logs,jsmith (10.20.4.33) GET https://portal.ridgeline.example/ -> 200
+2026-09-14T08:47:13-04:00,case01_proxy_logs,apatel (10.20.4.51) GET https://ridgeline-sso-verify.example/auth/login?u=apatel -> 200
+2026-09-14T09:02:30-04:00,case01_proxy_logs,mlee (10.20.4.18) GET https://mail.ridgeline.example/owa -> 200
+2026-09-14T09:14:03-04:00,case01_signin_logs,"Sign-in FAILURE for jsmith from 203.0.113.200 (Unknown / VPS, python-requests/2.31), MFA: denied"
+2026-09-14T09:14:40-04:00,case01_signin_logs,"Sign-in FAILURE for jsmith from 203.0.113.200 (Unknown / VPS, python-requests/2.31), MFA: denied"
+2026-09-14T09:16:02-04:00,case01_signin_logs,"Sign-in SUCCESS for jsmith from 203.0.113.200 (Unknown / VPS, Linux / Firefox), MFA: approved (push)"
+2026-09-14T09:18:55-04:00,case01_signin_logs,"Sign-in SUCCESS for jsmith from 203.0.113.200 (Unknown / VPS, Linux / Firefox), MFA: n/a (session)"
+2026-09-14T09:19:30-04:00,case01_mailbox_audit,jsmith from 203.0.113.200: New-InboxRule - Name='.' ; From contains 'it' OR 'security' ; MoveToFolder='RSS Feeds' ; MarkAsRead=True
+2026-09-14T09:21:12-04:00,case01_mailbox_audit,jsmith from 203.0.113.200: SearchQuery - query='invoice OR wire OR payment'
+2026-09-14T09:26:48-04:00,case01_mailbox_audit,jsmith from 203.0.113.200: Send - To=ap-team@ridgeline.example ; Subject='Updated banking details for vendor payments'
+2026-09-14T09:40:20-04:00,case01_signin_logs,"Sign-in SUCCESS for mlee from 192.0.2.50 (Wheeling, US, macOS / Safari), MFA: satisfied"

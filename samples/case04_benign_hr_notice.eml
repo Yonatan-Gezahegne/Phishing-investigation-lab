@@ -1,0 +1,25 @@
+Received: from internal-relay.ridgeline.example (internal-relay.ridgeline.example [192.0.2.25]) by mx1.ridgeline.example with ESMTPS id E1A77; Thu, 17 Sep 2026 09:00:03 -0400
+Authentication-Results: mx1.ridgeline.example;
+ spf=pass smtp.mailfrom=ridgeline.example;
+ dkim=pass header.d=ridgeline.example;
+ dmarc=pass header.from=ridgeline.example
+From: Ridgeline HR <hr-notifications@ridgeline.example>
+Reply-To: hr@ridgeline.example
+Return-Path: <hr-notifications@ridgeline.example>
+To: all-staff@ridgeline.example
+Subject: Open enrollment reminder - benefits portal now open
+Date: Thu, 17 Sep 2026 09:00:02 -0400
+Message-ID: <oe2026.0917@ridgeline.example>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Hi team,
+
+Open enrollment runs Sept 17 - Oct 2. Review your elections in the benefits p=
+ortal:
+https://benefits.ridgeline.example/enroll
+
+Questions? Reply to this email or stop by HR.
+
+Ridgeline HR

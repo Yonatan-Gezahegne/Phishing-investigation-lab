@@ -1,0 +1,4 @@
+timestamp,user,src_ip,operation,details
+2026-09-14T09:19:30-04:00,jsmith,203.0.113.200,New-InboxRule,Name='.' ; From contains 'it' OR 'security' ; MoveToFolder='RSS Feeds' ; MarkAsRead=True
+2026-09-14T09:21:12-04:00,jsmith,203.0.113.200,SearchQuery,query='invoice OR wire OR payment'
+2026-09-14T09:26:48-04:00,jsmith,203.0.113.200,Send,To=ap-team@ridgeline.example ; Subject='Updated banking details for vendor payments'

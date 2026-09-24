@@ -1,0 +1,8 @@
+timestamp,user,result,src_ip,geo,user_agent,mfa
+2026-09-14T07:58:11-04:00,jsmith,success,192.0.2.50,"Wheeling, US",Windows 10 / Edge,satisfied
+2026-09-14T08:05:42-04:00,apatel,success,192.0.2.50,"Wheeling, US",Windows 10 / Chrome,satisfied
+2026-09-14T09:14:03-04:00,jsmith,failure,203.0.113.200,Unknown / VPS,python-requests/2.31,denied
+2026-09-14T09:14:40-04:00,jsmith,failure,203.0.113.200,Unknown / VPS,python-requests/2.31,denied
+2026-09-14T09:16:02-04:00,jsmith,success,203.0.113.200,Unknown / VPS,Linux / Firefox,approved (push)
+2026-09-14T09:18:55-04:00,jsmith,success,203.0.113.200,Unknown / VPS,Linux / Firefox,n/a (session)
+2026-09-14T09:40:20-04:00,mlee,success,192.0.2.50,"Wheeling, US",macOS / Safari,satisfied

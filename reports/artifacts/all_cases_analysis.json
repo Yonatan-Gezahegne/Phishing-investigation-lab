@@ -1,0 +1,197 @@
+[
+  {
+    "file": "samples/case01_credential_harvest.eml",
+    "headers": {
+      "From": "Ridgeline IT Service Desk <helpdesk@ridgeIine-support.example>",
+      "Reply-To": "helpdesk@ridgeIine-support.example",
+      "Return-Path": "<bounce-7731@mailer-cloudsend.example>",
+      "To": "jsmith@ridgeline.example, apatel@ridgeline.example, mlee@ridgeline.example",
+      "Subject": "ACTION REQUIRED: Your password expires in 24 hours",
+      "Date": "Mon, 14 Sep 2026 08:12:44 -0400",
+      "Message-ID": "<20260914121244.4471@mailer-cloudsend.example>"
+    },
+    "authentication": {
+      "spf": "fail",
+      "dkim": "none",
+      "dmarc": "fail"
+    },
+    "origin_ip": "203.0.113.77",
+    "received_hops": [
+      {
+        "header": "from mx-edge.ridgeline.example (mx-edge.ridgeline.example [192.0.2.10]) by mx1.ridgeline.example with ESMTPS id 8F2A1; Mon, 14 Sep 2026 08:12:47 -0400",
+        "ips": [
+          "192.0.2.10"
+        ]
+      },
+      {
+        "header": "from smtp07.mailer-cloudsend.example (unknown [203.0.113.77]) by mx-edge.ridgeline.example with ESMTP id 71C0B; Mon, 14 Sep 2026 08:12:46 -0400",
+        "ips": [
+          "203.0.113.77"
+        ]
+      }
+    ],
+    "urls": [
+      "https://portal.ridgeline.example/password-reset",
+      "https://ridgeline-sso-verify.example/auth/login?u=jsmith"
+    ],
+    "urls_defanged": [
+      "hxxps://portal[.]ridgeline[.]example/password-reset",
+      "hxxps://ridgeline-sso-verify[.]example/auth/login?u=jsmith"
+    ],
+    "link_mismatches": [
+      {
+        "display": "https://portal.ridgeline.example/password-reset",
+        "actual": "https://ridgeline-sso-verify.example/auth/login?u=jsmith"
+      }
+    ],
+    "attachments": [],
+    "red_flags": [
+      "(+1) SPF result is 'fail'",
+      "(+1) DKIM result is 'none'",
+      "(+1) DMARC result is 'fail'",
+      "(+1) Return-Path domain (mailer-cloudsend.example) differs from From domain (ridgeiine-support.example)",
+      "(+2) 1 link(s) where display text != real destination",
+      "(+3) Sender domain 'ridgeiine-support.example' is a look-alike of protected domain 'ridgeline.example'",
+      "(+2) URL domain 'ridgeline-sso-verify.example' uses our brand name but is not ours",
+      "(+1) Urgency / pressure language: immediately, suspended, verify, within 24 hours, action required, password expires"
+    ],
+    "triage_score": 12,
+    "triage_verdict": "LIKELY MALICIOUS"
+  },
+  {
+    "file": "samples/case02_invoice_attachment.eml",
+    "headers": {
+      "From": "Pinecrest Supply Accounts <accounts@pinecrest-supply.example>",
+      "Reply-To": "pinecrest.billing.dept@quickmail-free.example",
+      "Return-Path": "<accounts@pinecrest-supply.example>",
+      "To": "ap-team@ridgeline.example",
+      "Subject": "Overdue invoice #88213 - final notice",
+      "Date": "Tue, 15 Sep 2026 14:03:10 -0400",
+      "Message-ID": "<CAF88213.9921@pinecrest-supply.example>"
+    },
+    "authentication": {
+      "spf": "softfail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "origin_ip": "198.51.100.23",
+    "received_hops": [
+      {
+        "header": "from mx-edge.ridgeline.example (mx-edge.ridgeline.example [192.0.2.10]) by mx1.ridgeline.example with ESMTPS id 9B7D3; Tue, 15 Sep 2026 14:03:14 -0400",
+        "ips": [
+          "192.0.2.10"
+        ]
+      },
+      {
+        "header": "from mail.pinecrest-supply.example (vps-host.cheap-cloud.example [198.51.100.23]) by mx-edge.ridgeline.example with ESMTP id 5E1F9; Tue, 15 Sep 2026 14:03:12 -0400",
+        "ips": [
+          "198.51.100.23"
+        ]
+      }
+    ],
+    "urls": [],
+    "urls_defanged": [],
+    "link_mismatches": [],
+    "attachments": [
+      {
+        "filename": "Invoice_88213.html",
+        "content_type": "text/html",
+        "size_bytes": 482,
+        "sha256": "e8eae359f834670a5a486e3a19588ae2d5870a9e6966f839cc19ac11748a9633",
+        "md5": "ed8771d1b859741c50a09c77aa0823ad",
+        "risky_extension": true
+      }
+    ],
+    "red_flags": [
+      "(+1) SPF result is 'softfail'",
+      "(+1) DKIM result is 'fail'",
+      "(+1) DMARC result is 'fail'",
+      "(+1) Reply-To domain (quickmail-free.example) differs from From domain (pinecrest-supply.example)",
+      "(+1) Free-mail domain used in From/Reply-To: quickmail-free.example",
+      "(+2) Risky attachment type: Invoice_88213.html",
+      "(+1) Urgency / pressure language: immediately, final notice, overdue"
+    ],
+    "triage_score": 8,
+    "triage_verdict": "LIKELY MALICIOUS"
+  },
+  {
+    "file": "samples/case03_bec_giftcard.eml",
+    "headers": {
+      "From": "Dana Whitfield <dana.whitfield.ceo@quickmail-free.example>",
+      "Reply-To": "dana.whitfield.ceo@quickmail-free.example",
+      "Return-Path": "<dana.whitfield.ceo@quickmail-free.example>",
+      "To": "rgarcia@ridgeline.example",
+      "Subject": "Quick favor - confidential",
+      "Date": "Wed, 16 Sep 2026 16:47:31 -0400",
+      "Message-ID": "<a81f.20260916204731@quickmail-free.example>"
+    },
+    "authentication": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "origin_ip": "198.51.100.140",
+    "received_hops": [
+      {
+        "header": "from mx-edge.ridgeline.example (mx-edge.ridgeline.example [192.0.2.10]) by mx1.ridgeline.example with ESMTPS id C44E0; Wed, 16 Sep 2026 16:47:35 -0400",
+        "ips": [
+          "192.0.2.10"
+        ]
+      },
+      {
+        "header": "from out-19.quickmail-free.example (out-19.quickmail-free.example [198.51.100.140]) by mx-edge.ridgeline.example with ESMTPS id 2D9A6; Wed, 16 Sep 2026 16:47:33 -0400",
+        "ips": [
+          "198.51.100.140"
+        ]
+      }
+    ],
+    "urls": [],
+    "urls_defanged": [],
+    "link_mismatches": [],
+    "attachments": [],
+    "red_flags": [
+      "(+3) Display name impersonates executive 'Dana Whitfield' from external domain quickmail-free.example",
+      "(+1) Free-mail domain used in From/Reply-To: quickmail-free.example",
+      "(+1) Urgency / pressure language: urgent, gift card, confidential"
+    ],
+    "triage_score": 5,
+    "triage_verdict": "LIKELY MALICIOUS"
+  },
+  {
+    "file": "samples/case04_benign_hr_notice.eml",
+    "headers": {
+      "From": "Ridgeline HR <hr-notifications@ridgeline.example>",
+      "Reply-To": "hr@ridgeline.example",
+      "Return-Path": "<hr-notifications@ridgeline.example>",
+      "To": "all-staff@ridgeline.example",
+      "Subject": "Open enrollment reminder - benefits portal now open",
+      "Date": "Thu, 17 Sep 2026 09:00:02 -0400",
+      "Message-ID": "<oe2026.0917@ridgeline.example>"
+    },
+    "authentication": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "origin_ip": "192.0.2.25",
+    "received_hops": [
+      {
+        "header": "from internal-relay.ridgeline.example (internal-relay.ridgeline.example [192.0.2.25]) by mx1.ridgeline.example with ESMTPS id E1A77; Thu, 17 Sep 2026 09:00:03 -0400",
+        "ips": [
+          "192.0.2.25"
+        ]
+      }
+    ],
+    "urls": [
+      "https://benefits.ridgeline.example/enroll"
+    ],
+    "urls_defanged": [
+      "hxxps://benefits[.]ridgeline[.]example/enroll"
+    ],
+    "link_mismatches": [],
+    "attachments": [],
+    "red_flags": [],
+    "triage_score": 0,
+    "triage_verdict": "LOW RISK - verify context"
+  }
+]
